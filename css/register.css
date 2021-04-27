@@ -1,0 +1,30 @@
+#register div{
+    height: 40px;
+    margin-top: 20px;
+}
+
+#register span{
+    /*display: inline-block;*/
+    /*background-color: burlywood;*/
+    /*此处浮动用于和input对齐*/
+    /*加边框修饰*/
+    width: 100px;
+    height: 20px;
+    /*display: block;*/
+    float: left;
+    text-align: center;
+    border: 1px solid #6c6c6c;
+    border-radius: 10px;
+}
+
+#register input{
+    width: 260px;
+    height: 20px;
+}
+
+#register .button button{
+    border-radius: 30px;
+    text-align: center;
+}
+
+

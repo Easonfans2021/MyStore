@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#header{
+    height: 88px;
+    background:darkgray;
+}
+
+#header .h_center{
+    width: 1200px;
+    height: 88px;
+    background: darkorange;
+    /*居中*/
+    margin: 0 auto;
+    body:1px solid #ccc;
+}
+
+#header .h_center img{
+    float: left;
+    margin-top: 5px;
+}
+
+#header .h_center p{
+    float: left;
+    text-align: center;
+    width: 880px;
+    font-size: 10px;
+    body:1px solid #ffb4ab;
+    margin-top: 20px;
+    margin-left: 80px;
+    padding: 3px;
+    color: #6c6c6c;
+    background: #fef2f2;
+}
+
+#login_body{
+    height: 600px;
+    background-image: url("../images/login_img.jpeg");
+    /*背景图片剧中显示*/
+    background-position: center center;
+}
+
+#login_body .login_b_center{
+    width: 1200px;
+    height: 600px;
+    margin: 0 auto;
+    /*background-color: aqua;*/
+    /*父亲相对定位*/
+    position: relative;
+}
+
+#login_body .login_b_center .login_bg{
+    width: 370px;
+    height: 351px;
+    /*可以设置透明度
+    0代表透明，1代表白色*/
+    background-color: rgba(255,255,255,0.9);
+    /*  单个元素定位使用绝对定位，多个元素使用浮动定位
+    使用绝对定位必须有参照物，子绝父相*/
+    position: absolute;
+    /*此处意思是该元素距离参照物右边为0，上边为0*/
+    right: 10px;
+    top: 80px;
+    padding: 20px;
+}
+
+#login div{
+    height: 40px;
+    margin-top: 20px;
+}
+
+#login span{
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    /*此处浮动用于和input对齐*/
+    float: left;
+    /*加边框修饰*/
+    border: 1px solid #6c6c6c;
+}
+
+#login .username span{
+    background-image: url("../images/username.jpg");
+}
+#login .password span{
+    background-image: url("../images/password.jpg");
+}
+
+#login input{
+    width: 260px;
+    height: 40px;
+    float: left;
+}
+
+#login .login_btn input{
+    background-color: #f40;
+    border: none;
+    width: 300px;
+    /*此处主要是文字颜色*/
+    color: #fef2f2;
+}
+
+#login .forgot_pwd {
+    text-align: right;
+    margin-top: 40px;
+}
+
+a{
+    /*去掉下划线*/
+    text-decoration: none;
+}
+
+#footer {
+    text-align: center;
+    height: 300px;
+    background-color: darkorange;
+    padding-top: 10px;
+}
+#footer .link a{
+    margin-left: 5px;
+    margin-right: 5px;
+    /*文字*/
+    color: aquamarine;
+}
+#footer .copyright{
+    margin-top: 10px;
+}

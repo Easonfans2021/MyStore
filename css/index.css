@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    /*此处的作用是以后不用再因为宽度的增加再重新设置盒子模型*/
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fef2f2;
+}
+#header{
+    height: 210px;
+    background-color: white;
+}
+
+#header .header_top{
+    height: 36px;
+    background-color: #f5f5f5;
+}
+
+#header .header_top_center{
+    width: 1200px;
+    height: 36px;
+    /*用于盒子整体居中，不是文字居中*/
+    margin: 0 auto;
+    /*子控件会继承父控件的属性*/
+    line-height: 36px;
+}
+
+#header .header_top_center .header_top_left{
+    /*让两个盒子都在同一层，要用浮动*/
+    float: left;
+    /*文字颜色*/
+    font-size: 13px;
+    height: 36px;
+}
+
+#header .header_top_center .header_top_right{
+    /*让两个盒子都在同一层，要用浮动*/
+    float: right;
+    height: 36px;
+    font-size: 13px;
+}
+
+#header .header_top_center .header_top_right a{
+    color: #6c6c6c;
+/*    文字间隙*/
+    margin: 0 5px;
+}
+
+a{
+    /*删除下划线*/
+    text-decoration: none;
+}
+
+#header .header_center{
+    width: 1200px;
+    height: 124px;
+    margin: 0 auto;
+}
+
+#header .header_center .h_c_logo{
+    width: 190px;
+    height: 124px;
+    float: left;
+}
+#header .header_center .h_c_logo img{
+    width: 170px;
+    height: 110px;
+    margin-top: 10px;
+}
+
+#header .header_center .h_c_search{
+    width: 815px;
+    height: 124px;
+    float:left;
+}
+
+#header .header_center .h_c_search form{
+    width: 630px;
+    height: 40px;
+    background-color: rebeccapurple;
+    margin-top: 40px;
+    /*距离左侧*/
+    margin-left: 80px;
+}
+
+#header .header_center .h_c_search .t_input{
+    width: 555px;
+    height: 40px;
+    border: 2px solid #6c6c6c;
+    float: left;
+    padding-left: 10px;
+}
+
+#header .header_center .h_c_search .t_button{
+    width: 75px;
+    height: 40px;
+    float: left;
+    border:none;
+}
+
+#header .header_center .h_c_search .hot{
+    margin-left: 80px;
+    margin-top: 10px;
+}
+
+#header .header_center .h_c_search .hot a{
+    color:darkcyan;
+    font-size: 13px;
+    margin-right: 5px;
+}
+
+#header .header_center .h_c_search .hot a:hover{
+    color: red;
+}
+
+#header .header_center .h_c_search .hot a:first-child{
+    color: blue;
+}
+
+#header .header_center .h_c_code{
+    width: 195px;
+    height: 124px;
+    float: left;
+}
+#header .header_center .h_c_code img{
+    width: 160px;
+    height: 104px;
+    margin-top: 10px;
+}
+
+#header .nav{
+    width: 1200px;
+    height: 44px;
+    background-color: #ff4400;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+#header .nav ul{
+    width: 1200px;
+    height: 44px;
+    list-style: none;
+    /*垂直居中*/
+    line-height: 44px;
+    /*伸缩布局*/
+    display:flex;
+}
+
+#header .nav ul li{
+    /*float: left;*/
+    /*margin: 0 20px;*/
+    flex: 1;
+    text-align: center;
+}
+
+#header .nav ul li a{
+    color: #fef2f2;
+    font-size: 16px;
+    /*文字加粗*/
+    font-weight: bold;
+}
+
+#header .nav ul li a:hover{
+    font-size: 25px;
+}
+
+#ad{
+    width: 1200px;
+    height: 500px;
+    /*background-color: #6c6c6c;*/
+    /*上下10px，左右对齐*/
+    margin: 10px auto;
+}
+
+#ad img{
+    width: 1200px;
+    height: 500px;
+}
+
+#ms{
+    width: 1200px;
+    height: 600px;
+    background-color: #ffb4ab;
+    margin: 0 auto;
+    /*margin-top: 10px;*/
+}
+
+#ms .ms_top iframe{
+    margin-top: 20px;
+    width: 1200px;
+    height: 600px;
+    /*background-image: url("../images/莽夫模式.png");*/
+    -webkit-background-size: 1200px 55px;
+    background-size: 1200px 55px;
+}
+
+#ms .ms_body{
+    width: 1200px;
+    height: 250px;
+    background-color: white;
+}

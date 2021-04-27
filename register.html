@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>注册您的光之国账号</title>
+  <link rel="stylesheet" href="css/register.css">
+  <script src="js/jquery-3.6.0.js"></script>
+</head>
+<body>
+  <div id="register">
+    <form action="yourchoice.html" method="get">
+      <div class="smartphone">
+        <span>手机号</span><input type="text" required placeholder="输入不能为空" name="sp" checked="checked" id="sp">
+      </div>
+      <div class="password">
+        <span>密码</span><input type="password" required placeholder="输入不能为空" name="sp" checked="checked" id="pw">
+      </div>
+      <div class="repassword">
+        <span>再次确认密码</span><input type="text" type="username" required placeholder="输入不能为空">
+      </div>
+      <div class="email">
+        <span>邮箱</span><input type="text" required placeholder="输入不能为空">
+      </div>
+      <div class="testcode">
+        <span>验证码</span><input type="text" required placeholder="输入不能为空">
+      </div>
+      <div class="button">
+        <button>注册完成</button>
+      </div>
+
+
+    </form>
+
+
+  </div>
+</body>
+
+<script type="text/javascript">
+// <!--  js方式-->
+  var register1 =document.getElementById("register")
+  console.log(register1)
+//dom转jQuery对象
+  var reg1 =$('#resgiter1')
+console.log(reg1);
+//  jQurey方式
+  var reg =$("#register")
+ console.log(reg);
+  //jQuery转dom
+  var reg2= reg[0]
+console.log(reg2);
+//  表单选择器,都要加:
+  var inputs= $(":input")
+console.log(inputs);
+  var pws =$(':password')
+console.log(pws);
+
+  //获取属性,固有属性没区别，checked，selected，disable返回值是true或者false适合用prop
+//  attr方式
+  var spname1=$("#sp").attr("name")
+console.log(spname1);
+var spname3=$("#sp").attr("checked")
+console.log(spname3);
+
+//  prop方式
+ var spname2= $("#sp").prop("name")
+console.log(spname2);
+var spname4= $("#sp").prop("checked")
+console.log(spname4);
+
+//设置属性
+  $('#sp').attr("value",'1')
+  $('#pw').prop("value",'2')
+
+  $('#sp').attr("checked",'checked')
+  $('#sp').attr("checked",false)
+</script>
+</html>
